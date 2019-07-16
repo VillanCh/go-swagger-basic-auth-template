@@ -1,0 +1,18 @@
+swagger: '2.0'
+info:
+  version: 0.1.0
+  title: Protected Web App
+schemes:
+  - http
+security:
+  - basicAuth: []
+securityDefinitions:
+  basicAuth:
+    type: basic
+    description: HTTP Basic Authentication.
+paths:
+  /:
+    get:
+      responses:
+        '200':
+          description: Do
